@@ -1,0 +1,73 @@
+@font-face{
+  font-family:'digital-clock-font';
+  src: url('digital-7.ttf');
+ }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'digital-clock-font';
+    background-color: #e0f0ff; /* Light blue background */
+  }
+  
+  .container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .title {
+    color: #333; /* Dark gray text */
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4c90af; /* Blue button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .button:hover {
+    background-color: #2b6c8a; /* Darker blue on hover */
+  }
+  
+  .clock {
+    font-size: 400px;
+    margin-top: 50px;
+    color: #333; /* Dark gray text */
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.invert {
+  color: #8c3c38; /* Alarm text color */
+}
+
+@keyframes shakeAndFlash {
+  0% { transform: translateX(0); filter: invert(0%); }
+  25% { transform: translateX(-5px); filter: invert(50%); }
+  50% { transform: translateX(5px); filter: invert(100%); }
+  75% { transform: translateX(-5px); filter: invert(50%); }
+  100% { transform: translateX(0); filter: invert(0%); }
+}
+
+.shakeAndFlash {
+  animation: shakeAndFlash 0.5s ease-in-out infinite;
+}
+
+@keyframes flash-animation {
+  0% { filter: invert(0%); }
+  100% { filter: invert(100%); }
+}
+
+.button.disabled {
+  background-color: #ccc; /* Gray background for disabled buttons */
+  cursor: not-allowed; /* Change cursor to indicate disabled state */
+}
