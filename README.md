@@ -1,3 +1,10 @@
+About:
+
+Alarm Buddy is an alarm system which connects to your computer. The alarm is set using the potentiometer and button as well as interaction with the webpage. 
+
+Alarm Buddy makes setting your alarm a more entertaining experience! It randomly selects one of 5 audios to play when the alarm is going off, and all these audios are very unique. That way, you will never get tired of the same old alarm noise!
+
+
 Components:
 
 1 x ESP32 TTGO T-display
